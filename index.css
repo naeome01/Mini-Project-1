@@ -3,7 +3,6 @@ nav {
     color:blanchedalmond;
     font-weight: bolder;
     display: flex;
-    /* justify-content: space-between; */
     margin:auto;
     width: 100
 
@@ -38,9 +37,9 @@ li {
     padding: 5px;
 }
 
-/* td {
+td {
     padding-right: 100px;
-} */
+}
 
 a {
     color: whitesmoke;
