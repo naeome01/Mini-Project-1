@@ -54,6 +54,7 @@
     </div>
   </nav>
   <br>
+  
   <!-- Intro -->
   <div class="container text-center">
     <h1 class="h1 bg-light" style="letter-spacing: 5px; padding: 15px; font-weight: bolder;">INTRODUCTION TO MENTAL
@@ -297,7 +298,7 @@
   <!-- cards -->
   <center>
     <div class="container">
-      <div class="card m-2 d-sm-block d-md-inline-flex"
+      <div class="card d-sm-block d-md-inline-flex"
         style="width: 22rem; height: 300px; border: 10px inset rgb(245, 243, 241);">
         <div class="card-body" style="background-color: rgb(225, 243, 237);">
           <h5 class="card-title"
@@ -307,7 +308,7 @@
             illnesses. Everyone has mental health, regardless of whether they have a diagnosed condition.</p>
         </div>
       </div>
-      <div class="card m-2 d-sm-block d-md-inline-flex"
+      <div class="card d-sm-block d-md-inline-flex"
         style="width: 22rem; height: 300px; border: 10px inset rgb(245, 243, 241)">
         <div class="card-body text-align" style="background-color: rgb(225, 243, 237)">
           <h5 class="card-title"
@@ -318,7 +319,7 @@
             talents of others in areas in which you don't have a natural interest or capacity.</p>
         </div>
       </div>
-      <div class="card m-2 d-sm-block d-md-inline-flex"
+      <div class="card d-sm-block d-md-inline-flex"
         style="width: 22rem; height: 300px; border: 10px inset rgb(245, 243, 241)">
         <div class="card-body" style="background-color: rgb(225, 243, 237)">
           <h5 class="card-title"
@@ -328,7 +329,7 @@
             mindset. You don't have to wait until things are severe to prioritize your mental well-being.</p>
         </div>
       </div>
-      <div class="card m-2 d-sm-block d-md-inline-flex"
+      <div class="card d-sm-block d-md-inline-flex"
         style="width: 22rem; height: 300px;  border: 10px inset rgb(245, 243, 241)">
         <div class="card-body" style="background-color: rgb(225, 243, 237)">
           <h5 class="card-title"
@@ -339,7 +340,7 @@
             struggles.</p>
         </div>
       </div>
-      <div class="card m-2 d-sm-block d-md-inline-flex"
+      <div class="card d-sm-block d-md-inline-flex"
         style="width: 22rem; height: 300px;  border: 10px inset rgb(245, 243, 241)">
         <div class="card-body" style="background-color: rgb(225, 243, 237)">
           <h5 class="card-title"
@@ -350,7 +351,7 @@
             healthy lives just like those people with diabetes.</p>
         </div>
       </div>
-      <div class="card m-2 d-sm-block d-md-inline-flex"
+      <div class="card d-sm-block d-md-inline-flex"
         style="width: 22rem; height: 300px; border: 10px inset rgb(245, 243, 241)">
         <div class="card-body" style="background-color: rgb(225, 243, 237)">
           <h5 class="card-title"
@@ -361,7 +362,7 @@
             anyone.</p>
         </div>
       </div>
-      <div class="card m-2 d-sm-block d-md-inline-flex"
+      <div class="card d-sm-block d-md-inline-flex"
         style="width: 22rem; height: 300px;  border: 10px inset rgb(245, 243, 241)">
         <div class="card-body" style="background-color: rgb(225, 243, 237)">
           <h5 class="card-title"
@@ -444,6 +445,37 @@
       </div>
     </center>
   </div>
+
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "640874899584827");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v18.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
 </body>
 
